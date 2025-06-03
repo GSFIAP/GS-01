@@ -2,6 +2,21 @@
 
 .secao-produto {
     font-family: Space Grotesk;
+    padding-bottom: 0.5rem;
+    
+    & p {
+        margin-bottom: 0.6rem;
+        margin-top: 0.6rem;
+    }
+
+    & h3 {
+        margin-top: 0.6rem;
+    }
+
+    & h2 {
+        margin-left: 0.6rem;
+    }
+
     & h2,h3 {
     font-family: Anta;
     }
@@ -10,23 +25,35 @@
 .menu-navegacao {
     display: flex;
     flex-direction: row;
-    width: 6rem;
-    
-    & button {
-    background-color: var(--cor-principal);
-    color: var(--cor-secundaria); 
-    border-radius: 2rem;
-    }
-
-
+    justify-content: space-around;
     @media (max-width: 40rem){
-     flex-direction: column;   
+     flex-direction: column;
+        
     }
 }
 
+
+.botao-navegacao {
+    background-color: var(--cor-principal);
+    font-family: Space Grotesk;
+    border: none;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none; 
+    color: var(--cor-secundaria);
+    
+    }
+
+.botao-navegacao:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    transition: all 0.3s ease-in-out;
+    
+}
 header {
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
+    margin-bottom: 2rem;
     & h1 {
         font-family: Anta;
         display: flex;
@@ -39,9 +66,4 @@ header {
     display: flex;
     flex-direction: row-reverse;
     gap: 0.3rem;
-    & button {
-    background-color: var(--cor-principal);
-    color: var(--cor-secundaria); 
-    border-radius: 2rem;
-    }
 }
