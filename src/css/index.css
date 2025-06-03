@@ -1,0 +1,47 @@
+@import url("./variaveis.css");
+
+.secao-produto {
+    font-family: Space Grotesk;
+    & h2,h3 {
+    font-family: Anta;
+    }
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: row;
+    width: 6rem;
+    
+    & button {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria); 
+    border-radius: 2rem;
+    }
+
+
+    @media (max-width: 40rem){
+     flex-direction: column;   
+    }
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    & h1 {
+        font-family: Anta;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cor-site {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    & button {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria); 
+    border-radius: 2rem;
+    }
+}
