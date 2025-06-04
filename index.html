@@ -27,10 +27,10 @@
         </nav>
 
     </header>
-    <section class="secao-produto">
+    <section id="secao-produto-inicio" class="secao-produto">
         <h2>Enchente no Brasil</h2>
         <p>Hoje em muitas áreas do Brasil vemos diversos casos de enchente, tendo como consequência perca de casas ou até não sendo possível retornar a sua casa após um dia longo de trabalho</p>
-        <img alt="Enchente no Rio Grande do Sul" src="./src/assets/imgs/enchente-rio-grande-do-sul.webp">
+        <!-- //<img alt="Enchente no Rio Grande do Sul" src="./src/assets/imgs/enchente-rio-grande-do-sul.webp"> -->
         <p class="descricao-imagem">Enchente que assolou o estado do Rio Grande do Sul</p>
         <p>Isso se deve a falta de medidas preventivas e a identificação destes casos com antecedência.</p>
     </section>
@@ -68,7 +68,16 @@
         <p>Em caso da Defesa Cívil iniciar medidas para prevenção desses acontecimentos, será notificado aos usuários cadastrados no site.</p>
     </section>
 <footer id="Contato">
-
+    <form class="formulario">
+        <p>Deseja Implantar o nosso produto na sua rua?</p>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem"></textarea>
+        <button id="btnEnviar">Enviar</button>
+    </form>
 </footer>
     <script src="./src/js/app.js"></script>
 </body>

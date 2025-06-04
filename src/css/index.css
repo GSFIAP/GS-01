@@ -1,8 +1,14 @@
 @import url("./variaveis.css");
 
+#secao-produto-inicio {
+    padding-top: 9rem;
+}
+
 .secao-produto {
-    font-family: Space Grotesk;
+    font-family: var(--fonte-texto);
     padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    
     
     & p {
         margin-bottom: 0.6rem;
@@ -18,7 +24,7 @@
     }
 
     & h2,h3 {
-    font-family: Anta;
+    font-family: var(--fonte-titulo);
     }
 }
 
@@ -26,6 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
     @media (max-width: 40rem){
      flex-direction: column;
         
@@ -35,7 +42,7 @@
 
 .botao-navegacao {
     background-color: var(--cor-principal);
-    font-family: Space Grotesk;
+    font-family: var(--fonte-texto);
     border: none;
     font-size: 1rem;
     padding-bottom: 1rem;
@@ -54,11 +61,28 @@ header {
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
     margin-bottom: 2rem;
+    position: fixed;
+    width: 100%;
     & h1 {
-        font-family: Anta;
+        font-family: var(--fonte-titulo);
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    font-family: var(--fonte-texto);
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+
+    & label {
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
     }
 }
 
@@ -66,4 +90,14 @@ header {
     display: flex;
     flex-direction: row-reverse;
     gap: 0.3rem;
+}
+
+#btnEnviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: none;
 }
