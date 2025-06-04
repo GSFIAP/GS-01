@@ -66,6 +66,7 @@ header {
     position: fixed;
     width: 100%;
     & h1 {
+        margin-top: 0.8rem;
         font-family: var(--fonte-titulo);
         display: flex;
         align-items: center;

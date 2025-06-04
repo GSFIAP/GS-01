@@ -1,14 +1,19 @@
-const btnCor = document.getElementById("btnCor");
+const btnCor = document.getElementById("btnCorPreto");
+const html = document.querySelector("html");
 
-btnCor.addEventListener("click", function () {
-    if (document.body.style.backgroundColor === "black") {
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-    } else {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        btnCor.textContent = "Modo Claro";
-    }
+btnCorPreto.addEventListener("click", function () {
+
+    html.classList.toggle("modo-preto");
+});
+
+btnCorVerde.addEventListener("click", function () {
+
+    html.classList.remove("modo-preto") || html.classList.toggle("modo-azul");
+});
+
+btnCorAzul.addEventListener("click", function () {
+
+    html.classList.toggle("modo-azul");
 });
 
 const inputNome = document.getElementById('nome');

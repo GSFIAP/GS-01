@@ -4,3 +4,17 @@
     --fonte-titulo: Anta;
     --fonte-texto: Space Grotesk;
 }
+
+.modo-preto {
+    --cor-principal: #1E201E;
+    --cor-secundaria: #ECDFCC; 
+    --fonte-titulo: Anta;
+    --fonte-texto: Space Grotesk; 
+}
+
+.modo-azul {
+    --cor-principal: #3D90D7;
+    --cor-secundaria: #FFFA8D; 
+    --fonte-titulo: Anta;
+    --fonte-texto: Space Grotesk;   
+}
