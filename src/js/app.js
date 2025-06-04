@@ -13,7 +13,7 @@ btnCor.addEventListener("click", function () {
 
 const inputNome = document.getElementById('nome');
 const inputEmail = document.getElementById('email');
-const inputMensagem = document.getElementById('mensagem');
+const inputEndereco = document.getElementById('endereco');
 const btnEnviar = document.getElementById('btnEnviar');
 
 btnEnviar.addEventListener("click", function (event) {
@@ -21,17 +21,13 @@ btnEnviar.addEventListener("click", function (event) {
 
     let nome = inputNome.value
     let email = inputEmail.value
-    let mensagem = inputMensagem.value
+    let endereco = inputEndereco.value
 
-    if (nome === "" || email === "" ||  mensagem === "") {
-        
-        alert("TESTE")
-        // mensagemErro.textContent = "Preencha os campos vazios!"
-        // mensagemErro.style.color = "#ff0000"
-        // mensagemErro.classList.add('mensagemvermelha')
-        // mensagemErro.setAttribute("src", "link da imagem")
-        // mensagemErro.src = "link"
+    if (nome === "" || email === "" ||  endereco === "") {
+        alert("Preencha os Campos Vazios!")
         return
-
         }
+    else {
+        open(`https://api.whatsapp.com/send?phone=5511976769012&text=Olá%20meu%20nome%20é%20${nome},%20gostaria%20de%20implantar%20o%20Arduino%20no%20seguinte%20endereço:%20${endereco}.`)
+    }
     });

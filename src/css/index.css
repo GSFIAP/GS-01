@@ -1,5 +1,9 @@
 @import url("./variaveis.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 #secao-produto-inicio {
     padding-top: 9rem;
 }
@@ -29,27 +33,25 @@
 }
 
 .menu-navegacao {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    @media (max-width: 40rem){
-     flex-direction: column;
-        
-    }
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem;
 }
 
-
 .botao-navegacao {
-    background-color: var(--cor-principal);
-    font-family: var(--fonte-texto);
-    border: none;
-    font-size: 1rem;
-    padding-bottom: 1rem;
-    text-decoration: none; 
-    color: var(--cor-secundaria);
-    
-    }
+  background-color: var(--cor-principal);
+  font-family: var(--fonte-texto);
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  text-align: center;
+  width: auto; 
+}
+
 
 .botao-navegacao:hover {
     background-color: var(--cor-secundaria);
@@ -96,7 +98,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100rem;
+    width: 100%;
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
     border: none;
