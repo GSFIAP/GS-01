@@ -5,6 +5,13 @@
     --fonte-texto: Space Grotesk;
 }
 
+.modo-verde {
+    --cor-principal: #AEC8A4;
+    --cor-secundaria: #E7EFC7;
+    --fonte-titulo: Anta;
+    --fonte-texto: Space Grotesk;
+}
+
 .modo-preto {
     --cor-principal: #1E201E;
     --cor-secundaria: #ECDFCC; 

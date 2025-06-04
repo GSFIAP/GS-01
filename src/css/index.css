@@ -74,18 +74,28 @@ header {
     }
 }
 
+.Contato {
+    width: 100%;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 30rem;
     font-family: var(--fonte-texto);
     width: 100%;
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
-
+    & input {
+        width: 50%;
+        border-radius: 0.3rem;
+        margin-left: 0.5rem;
+    }
     & label {
         margin-bottom: 0.3rem;
         margin-top: 0.3rem;
+        margin-left: 0.5rem;
     }
 }
 
@@ -99,8 +109,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 20%;
+    border-radius: 0.3rem;
+    border: 2rem solid var(--cor-secundaria);
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
     border: none;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    margin-top: 0.7rem;
+
+    &:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-principal);
+        transition: all 0.5s ease-in-out;
+    }
 }
