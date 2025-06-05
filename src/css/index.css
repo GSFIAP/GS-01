@@ -60,6 +60,7 @@ header {
     margin-bottom: 2rem;
     position: fixed;
     width: 100%;
+    z-index: 1000;
     & h1 {
         margin-top: 0.8rem;
         font-family: var(--fonte-titulo);
@@ -176,14 +177,21 @@ header {
     #logo {
         width: 45%;
     } 
+
+    #Contato {
+        height: 0%;
+    }
     .formulario {
+        & label {
+            width: 35%;
+        }
+
         & input {
         width: 100%;
     }
 }
 
 }
-
 .redes-sociais {
     display: flex;
     flex-direction: column;
@@ -225,4 +233,58 @@ header {
         & a {
            color: var(--cor-principal); 
         }
-    }
+}
+
+.quadro-carrossel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carrossel img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .carrossel-btn {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

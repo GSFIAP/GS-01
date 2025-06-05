@@ -4,8 +4,12 @@ const inputNome = document.getElementById('nome');
 const inputEmail = document.getElementById('email');
 const inputEndereco = document.getElementById('endereco');
 const btnEnviar = document.getElementById('btnEnviar');
-const mensagemErro = document.getElementById('mensagemErro')
-const redesSociais = document.getElementById('logo-redes-social')
+const mensagemErro = document.getElementById('mensagemErro');
+const redesSociais = document.getElementById('logo-redes-social');
+const carrossel = document.getElementById('carrossel');
+const anterior = document.getElementById('anterior');
+const proximo = document.getElementById('proximo');
+let indice = 0;
 
 btnCorPreto.addEventListener("click", function () {
     html.classList.remove("modo-verde", "modo-azul") 
@@ -73,5 +77,29 @@ menuHamburguer.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
 
+function atualizarCarrossel() {
+  const larguraImagem = carrossel.clientWidth;
+  carrossel.style.transform = `translateX(-${indice * larguraImagem}px)`;
+}
+
+proximo.addEventListener('click', () => {
+  if (indice < carrossel.children.length - 1) {
+    indice++;
+  } else {
+    indice = 0;
+  }
+  atualizarCarrossel();
+});
+
+anterior.addEventListener('click', () => {
+  if (indice > 0) {
+    indice--;
+  } else {
+    indice = carrossel.children.length - 1;
+  }
+  atualizarCarrossel();
+});
+
+window.addEventListener('resize', atualizarCarrossel);
 
 
