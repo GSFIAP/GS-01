@@ -1,8 +1,8 @@
 :root {
-    --cor-principal: #AEC8A4;
-    --cor-secundaria: #E7EFC7;
+    --cor-principal: #3D90D7;
+    --cor-secundaria: #FFFA8D; 
     --fonte-titulo: Anta;
-    --fonte-texto: Space Grotesk;
+    --fonte-texto: Space Grotesk;  
 }
 
 .modo-verde {

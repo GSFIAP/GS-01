@@ -1,5 +1,11 @@
 const btnCor = document.getElementById("btnCorPreto");
 const html = document.querySelector("html");
+const inputNome = document.getElementById('nome');
+const inputEmail = document.getElementById('email');
+const inputEndereco = document.getElementById('endereco');
+const btnEnviar = document.getElementById('btnEnviar');
+const mensagemErro = document.getElementById('mensagemErro')
+const redesSociais = document.getElementById('redes-sociais')
 
 btnCorPreto.addEventListener("click", function () {
     html.classList.remove("modo-verde", "modo-azul") 
@@ -15,13 +21,11 @@ btnCorVerde.addEventListener("click", function () {
 btnCorAzul.addEventListener("click", function () {
     html.classList.remove("modo-verde", "modo-preto")
     html.classList.toggle("modo-azul");
+    // redesSociais.innerHTML = `
+    // <img id="whatsapp-modo-azul" src="./src/assets/imgs/whatsapp_modo_azul.png">
+    // `
 });
 
-const inputNome = document.getElementById('nome');
-const inputEmail = document.getElementById('email');
-const inputEndereco = document.getElementById('endereco');
-const btnEnviar = document.getElementById('btnEnviar');
-const mensagemErro = document.getElementById('mensagemErro')
 
 btnEnviar.addEventListener("click", function (event) {
     event.preventDefault()
@@ -38,3 +42,11 @@ btnEnviar.addEventListener("click", function (event) {
         open(`https://api.whatsapp.com/send?phone=5511976769012&text=Olá%20meu%20nome%20é%20${nome},%20gostaria%20de%20implantar%20o%20Arduino%20no%20seguinte%20endereço:%20${endereco}.`)
     }
     });
+
+const menuHamburguer = document.getElementById('menu-hamburguer');
+const menu = document.getElementById('menu');
+
+menuHamburguer.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+

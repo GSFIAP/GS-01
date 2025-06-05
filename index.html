@@ -21,7 +21,8 @@
         <img alt="fundo-verde" id="btnCorVerde" src="./src/assets/imgs/modo-verde.png">
         <img alt="fundo-verde" id="btnCorAzul" src="./src/assets/imgs/modo-azul.png">
         </div>
-        <nav class="menu-navegacao">
+        <button id="menu-hamburguer" class="menu-responsivo">☰</button>
+        <nav class="menu-navegacao" id="menu">
             <a class="botao-navegacao" href="#secao-produto-inicio">Início</a>
             <a class="botao-navegacao" href="#Produto">Projeto</a>
             <a class="botao-navegacao" href="#Objetivo">Objetivos</a>
@@ -72,9 +73,8 @@
         <p>Em caso da Defesa Cívil iniciar medidas para prevenção desses acontecimentos, será notificado aos usuários cadastrados no site.</p>
     </section>
 <footer id="Contato">
-
-    
     <form class="formulario">
+        <p id="mensagemErro"></p>
         <p>Deseja Implantar o nosso produto na sua rua?</p>
         <label for="nome">Nome:</label>
         <input type="text" id="nome">
@@ -83,8 +83,8 @@
         <label for="endereco">Endereço:</label>
         <input type="text" id="endereco"></textarea>
         <button id="btnEnviar">Enviar</button>
-        <p id="mensagemErro"></p>
     </form>
+        <img id="logo" src="./src/assets/imgs/logo.png" alt="Logo AquaTrack">
 </footer>
     <script src="./src/js/app.js"></script>
 </body>
