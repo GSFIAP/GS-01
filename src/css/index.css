@@ -6,24 +6,37 @@ html {
 
 #secao-produto-inicio {
     padding-top: 9rem;
+    
+    
 }
 
 .secao-produto {
     font-family: var(--fonte-texto);
     padding-bottom: 0.5rem;
     padding-top: 1rem;
-    margin-left: 2rem;
     margin-bottom: 0.6rem;
     & p {
         margin-bottom: 0.3rem;
-        margin-top: 0.6rem;
+        margin-top: 0.8rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    & h2 {
+        margin-bottom: 1rem;
     }
 
     & h3 {
-        margin-top: 0.6rem;
+        /* margin-top: 0.6rem; */
+        padding-top: 0.4rem;
+        
     }
     & h2,h3 {
     font-family: var(--fonte-titulo);
+    margin-left: 0.6rem;
+    display: flex;
+    justify-content: center;
     }
 }
 
@@ -74,7 +87,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items:start;
     margin-top: 0.4rem;
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
@@ -82,7 +95,7 @@ header {
 }
 
 #logo {
-    width: 16%;
+    width: 20%;
 
 
 }
@@ -92,11 +105,10 @@ header {
     flex-direction: column;
     justify-content: center;
     font-family: var(--fonte-texto);
-    width: 100%;
-    height: 100%;
+    width: 30%;
 
     & input {
-        width: 30%;
+        width: 100%;
         border-radius: 0.3rem;
         margin-left: 0.3rem;
         /* margin-top: 0.4rem; */
@@ -146,6 +158,118 @@ header {
     display: none;
 }
 
+
+
+.imagem-apresentacao {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-principal);
+    border: 0.3rem solid var(--cor-principal);
+    border-radius: 0.1rem;
+    
+    & img {
+        width: 35%;
+        object-fit: cover;
+        border-radius: 0.6rem;
+        margin: 0.3rem;
+    }
+
+}
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-texto);
+        & p {
+        margin:1rem;
+
+    }
+
+}
+
+.icones-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & img {
+        margin: 0.8rem;
+    }
+}
+
+.botao-quiz {
+    background-color: var(--cor-principal);
+    border: none;
+    margin-top: 0.8rem;
+    border-radius: 0.4rem;
+    width: 25%;
+    font-size: 1.5rem;
+    display: block;
+    margin: 1.5rem auto 0.8rem auto; 
+    & a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-texto);
+    }
+}
+
+.botao-quiz:hover {
+        background-color: var(--cor-secundaria);
+        transition: all 0.5s ease-in-out ;
+        & a {
+           color: var(--cor-principal); 
+        }
+}
+
+.quadro-carrossel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carrossel img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
+
 @media (max-width: 500px) {
   .menu-responsivo {
     display: block;
@@ -175,129 +299,36 @@ header {
     display: flex;
   }
     #logo {
-        width: 45%;
+        width: 35%;
     } 
 
     #Contato {
-        height: 0%;
+        width: 100%;
+    }
+
+
+
+    .redes-sociais {
+        width: 100%;
     }
     .formulario {
+        width: 100%;
+        
         & label {
-            width: 35%;
+            width: 100%;
         }
 
         & input {
         width: 100%;
     }
 }
-
-}
-.redes-sociais {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--fonte-texto);
-        & p {
-        margin:1rem;
-
+    .botao-quiz {
+        font-size: 1.2rem;
+        width: 45%;
     }
 
-}
-
-.icones-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    & img {
-        margin: 0.8rem;
+    html {
+        overflow-x: hidden;
     }
-}
-
-.botao-quiz {
-    background-color: var(--cor-principal);
-    border:none;
-    border-radius: 0.3rem;
-    width: 10%;
-    & a {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-texto);
-    }
-}
-
-.botao-quiz:hover {
-        background-color: var(--cor-secundaria);
-        
-        border-radius: 0.3rem;
-        transition: all 0.5s ease-in-out ;
-        & a {
-           color: var(--cor-principal); 
-        }
-}
-
-.quadro-carrossel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  border-radius: 0.5rem;
-}
-
-.carrossel {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-}
-
-.carrossel img {
-  width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-.carrossel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 2rem;
-  z-index: 1;
-  transition: background 0.3s;
-}
-
-.carrossel-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.anterior {
-  left: 10px;
-}
-
-.proximo {
-  right: 10px;
-}
-
-@media (max-width: 600px) {
-  .carrossel-btn {
-    font-size: 1.5rem;
-    padding: 0.4rem 0.8rem;
-  }
-}
-
-.imagem-apresentacao {  
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
-    & img {
-        width: 35%;
-        object-fit: cover;
-        border-radius: 0.6rem;
-        margin: 0.3rem;
-    }
 }
