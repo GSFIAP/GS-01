@@ -39,7 +39,8 @@ btnEnviar.addEventListener("click", function (event) {
         return
         }
     else {
-        open(`https://api.whatsapp.com/send?phone=5511976769012&text=Olá%20meu%20nome%20é%20${nome},%20gostaria%20de%20implantar%20o%20Arduino%20no%20seguinte%20endereço:%20${endereco}.`)
+        open(`https://api.whatsapp.com/send?phone=5511976769012&text=Olá%20meu%20nome%20é%20${nome},%20gostaria%20de%20implantar%20o%20AquaTrack%20no%20seguinte%20endereço:%20${endereco}.`)
+        mensagemErro.textContent = "Dados Enviados com sucesso!"
     }
     });
 
@@ -49,4 +50,6 @@ const menu = document.getElementById('menu');
 menuHamburguer.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
+
+
 

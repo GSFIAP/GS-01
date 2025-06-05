@@ -12,21 +12,16 @@ html {
     font-family: var(--fonte-texto);
     padding-bottom: 0.5rem;
     padding-top: 1rem;
-    
-    
+    margin-left: 2rem;
+    margin-bottom: 0.6rem;
     & p {
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.3rem;
         margin-top: 0.6rem;
     }
 
     & h3 {
         margin-top: 0.6rem;
     }
-
-    & h2 {
-        margin-left: 0.6rem;
-    }
-
     & h2,h3 {
     font-family: var(--fonte-titulo);
     }
@@ -38,15 +33,6 @@ html {
   gap: 1rem;
   width: 100%;
   padding: 0.5rem;
-
-  @media (max-width: 500px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 20%;
-    padding: 0.5rem;
-  }
 }
 
 .botao-navegacao {
@@ -204,3 +190,4 @@ header {
 }
 
 }
+
