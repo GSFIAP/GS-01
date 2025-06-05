@@ -304,6 +304,7 @@ header {
 
     #Contato {
         width: 100%;
+        flex-flow: row wrap;
     }
 
 
@@ -327,8 +328,6 @@ header {
         width: 45%;
     }
 
-    html {
-        overflow-x: hidden;
-    }
+
     
 }

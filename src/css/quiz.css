@@ -23,4 +23,18 @@
    border-radius: 0.4rem;
    font-size: 1rem;
    width: 20%;
+   margin-left: 3rem;
+
+   &:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    transition: all 0.3s ease-in-out;
+   }
+}
+
+@media (max-width:500px) {
+    .botao-enviar-quiz {
+        width: 50%;
+        margin: auto 2rem auto 6rem;
+    }
 }
