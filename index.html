@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header id="Inicio">
+        <h1>AquaTrack</h1>
+        <div class="cor-site">
+        <img alt="fundo-escuro" id="btnCorPreto" src="/src/assets/imgs/modo-preto.png">
+        <img alt="fundo-verde" id="btnCorVerde" src="/src/assets/imgs/modo-verde.png">
+        <img alt="fundo-verde" id="btnCorAzul" src="/src/assets/imgs/modo-azul.png">
+        </div>
+        <button id="menu-hamburguer" class="menu-responsivo">☰</button>
+        <nav class="menu-navegacao" id="menu">
+            <a class="botao-navegacao" href="#secao-produto-inicio">Início</a>
+            <a class="botao-navegacao" href="#Produto">Projeto</a>
+            <a class="botao-navegacao" href="#Objetivos">Objetivos</a>
+            <a class="botao-navegacao" href="#Publico-Alvo">Público Alvo</a>
+            <a class="botao-navegacao" href="#Cotidiano">Cotidiano</a>
+            <a class="botao-navegacao" href="#Contato">Contato</a>
+        </nav>
+
+    </header>
+    <section id="secao-produto-inicio" class="secao-produto">
+        <h2>Enchente no Brasil</h2>
+        <p>Hoje em muitas áreas do Brasil vemos diversos casos de enchente, tendo como consequência perda de imóveis ou até não sendo possível retornar a sua casa após um dia longo de trabalho</p> 
+        <section class="quadro-carrossel">
+        <div class="carrossel" id="carrossel">
+            <img src="/src/assets/imgs/enchente_rio_grande_do_sul.webp" alt="Enchente Rio Grande do Sul" />
+            <img src="/src/assets/imgs/enchente_ponte.jpg" alt="Enchente em Ponte" />
+            <img src="/src/assets/imgs/enchentes_no_brasil.jpg" alt="Homem na Enchente" />
+        </div>
+        <button class="carrossel-btn anterior" id="anterior">&#10094;</button>
+        <button class="carrossel-btn proximo" id="proximo">&#10095;</button>
+        </section>
+        <p>Isso se dá devido a falta de medidas preventivas e identificação destes casos com antecedência.</p>
+    </section>
+
+    <section id="Produto" class="secao-produto">
+        <h2>Apresentação do Produto</h2>
+        <div class="imagem-apresentacao">
+          <img alt="Defesa Cívil auxiliando Cidadãos" src="/src/assets/imgs/apresentacao_arduino_1.jpg">
+          <img alt="Defesa Cívil auxiliando Cidadãos" src="/src/assets/imgs/apresentacao_arduino_2.jpg">
+          <img alt="Defesa Cívil auxiliando Cidadãos" src="/src/assets/imgs/apresentacao_arduino_3.jpg">
+        </div>
+        <p>Nosso produto consiste de um Arduino que será fixo em um lugar estrátegico da rua para análise do volume de água.</p>
+        <p>Assim que ultrapassado um limite aceitável da água sobre o solo, será enviado um aviso a Defesa Cívil e armazenado a localização.</p>
+    </section>
+
+    <section id="Objetivos" class="secao-produto">
+        <h2>Objetivos</h2>
+        <p>Com essa tecnologia, pretendemos identificar, prevenir e evitar as enchentes e fazer medidas nas áreas mais afetadas com o auxilio da Defesa Civil.</p>
+        <p>Com os dados de localização armazenados, o usuário poderá verificar no mapa se sua casa ou rota estão alagadas.</p>
+
+    </section>
+
+    <section id="Publico-Alvo" class="secao-produto">
+        <h2>Público Alvo</h2>
+        <div class="imagem-apresentacao">
+            <img alt="Defesa Cívil auxiliando Cidadãos na Enchente" src="/src/assets/imgs/defesa_civil_1.jpg">
+            <img alt="Defesa Cívil auxiliando Cidadãos na Enchente" src="/src/assets/imgs/defesa_civil_2.jpg">
+            <img alt="Defesa Cívil auxiliando Cidadãos na Enchente" src="/src/assets/imgs/defesa_civil_3.jpg">
+        </div>
+        <h3>Defesa Cívil</h3>
+        <p>Poderá consultar as ruas que estão comprometidas e realizar medidas preventivas.</p>
+        <h3>Cidadãos</h3>
+        <p>Identificar se há enchentes na região que reside ou até no caminho até a mesma.</p>
+    </section>
+
+    <section id="Beneficios" class="secao-produto">
+        <h2>Benefícios</h2>
+        <p>Baixo custo de instalação e será possível acessar o nosso site em qualquer dispositivo com acesso à internet.</p>
+        <p>O nosso produto, sendo implantado em diversas regiões e com auxílio da Defesa Cívil, não irá ocorrer mais casos como o do Rio Grande do Sul.</p>
+    </section>
+
+    <section id="Cotidiano" class="secao-produto">
+        <h2>Funcionamento no Cotidiano</h2>
+        <p>Ao acessar o site, será possível verificar o endereço que você deseja (Baixo/Médio ou Alto Risco de Enchente) e também o caminho</p>
+        <p>Caso a Defesa Cívil inicie medidas para prevenção desses acontecimentos, será notificado aos usuários cadastrados no site.</p>
+    </section>
+
+    <section class="secao-produto">
+        <h2>Faça nosso Quiz!</h2>
+        <p>O que achou da nossa ideia? Faça nosso quiz e entenda mais sobre o assunto.</p>
+        <button class="botao-quiz"><a href="./src/pages/quiz.html">Acesso ao Quiz</a></button>
+    </section>
     
-    <script src="./src/js/app.js"></script>
+<footer id="Contato">
+    <form class="formulario">
+        <p id="mensagemErro"></p>
+        <p>Deseja Implantar o nosso produto na sua rua?</p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco"></textarea>
+        <button id="btnEnviar">Enviar</button>   
+    </form>
+            <div class="redes-sociais" id="logo-redes-social">
+                <p>Venha conferir nossas redes sociais para mais atualizações!</p>
+                <div class="icones-redes">
+                    <a href="https://api.whatsapp.com/send/?phone=5511976769012&text&type=phone_number&app_absent=0"><img  alt="Whatsapp" src="/src/assets/imgs/whatsapp_modo_azul.png"></a>
+                    <a href="https://www.instagram.com/"><img alt="Instagram" src="/src/assets/imgs/instagram_modo_azul.png"></a>
+                    <a href="https://www.linkedin.com/"><img alt="LinkedIn" src="/src/assets/imgs/linkedin_modo_azul.png"></a>
+                </div>
+            </div>
+        <img id="logo" src="/src/assets/imgs/logo.png" alt="Logo AquaTrack">
+
+</footer>
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/carrossel.js"></script>
 </body>
 </html>
