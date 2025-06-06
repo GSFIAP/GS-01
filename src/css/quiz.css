@@ -2,6 +2,8 @@
     font-family: var(--fonte-texto);
     padding: 1rem;
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
 
     & h3 {
         margin-bottom: 0.5rem;

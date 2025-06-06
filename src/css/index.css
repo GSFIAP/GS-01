@@ -200,12 +200,11 @@ header {
 .botao-quiz {
     background-color: var(--cor-principal);
     border: none;
-    margin-top: 0.8rem;
     border-radius: 0.4rem;
     width: 25%;
     font-size: 1.5rem;
     display: block;
-    margin: 1.5rem auto 0.8rem auto; 
+    margin: 3rem auto 3rem auto; 
     & a {
     text-decoration: none;
     color: var(--cor-secundaria);
